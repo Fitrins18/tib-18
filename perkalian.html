@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-    <title>Table Perkalian</title>
+    <title>Table Pembagian</title>
 </head>
 <body>
     <table border="1" align="center">
         <tbody>
         <?php for($baris=1; $baris<=1; $baris++) : // loop baris sebanyak 10x ?>
             <tr>
+                
             <?php for($colum=1; $colum<=1; $colum++) : // loop kolom sebanyak 10x ?>
-                <td><?php echo "{$colum} x {$baris} = ".($colum * $baris); // kalikan colum dengan baris ?></td>
+                <td><?php echo "{$colum} / {$baris} = ".($colum * $baris); // bagikan colum dengan baris ?></td>
             <?php endfor; ?>
+                
             </tr>
         <?php endfor;  ?>
         </tbody>
+        
+        
     </table>
 </body>
 </html>
